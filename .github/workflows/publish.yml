@@ -9,15 +9,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Publish to Medium
-        uses: hatenadiary/medium-publish@v2
-        with:
-          medium-token: ${{ secrets.MEDIUM_TOKEN }}
-          file-path: path/to/article.md
       - name: Publish to Hashnode
         uses: mhashnode/hashnode-publish-action@v1
         with:
           hashnode-token: ${{ secrets.HASHNODE_TOKEN }}
-          file-path: path/to/article.md
+          file-path: IptablesNetFilters.md
           title: "Netfilter and Iptables Article"
           tags: "hashnode, github, actions"
+
+
