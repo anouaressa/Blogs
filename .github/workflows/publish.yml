@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Publish to Hashnode
-        uses: mhashnode/hashnode-publish-action@v1
+        uses: actions/javascript-action@v1
         with:
           hashnode-token: ${{ secrets.HASHNODE_TOKEN }}
           file-path: IptablesNetFilters.md
