@@ -13,7 +13,7 @@ jobs:
         uses: actions/javascript-action@v1
         with:
           hashnode-token: ${{ secrets.HASHNODE_TOKEN }}
-          file-path: IptablesNetFilters.md
+          file-path: Blogs/IptablesNetFilters.md
           title: "Netfilter and Iptables Article"
           tags: "hashnode, github, actions"
 
